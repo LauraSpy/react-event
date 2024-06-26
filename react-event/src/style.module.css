@@ -1,17 +1,21 @@
 body {
   background-color: #282c34;
   min-height: 100vh;
+  align-items: center;
+  width: 100vw;
 }
 
 label {
   color: white;
   text-align: center;
-  font-size: larger;
+  font-size: 1.2em;
   padding: 2%;
-  margin: 5%;
+  margin-top: 50%;
+  margin-bottom: 15%;
 }
 .activity {
   text-align: center;
+  padding: 50%;
 }
 
 button {
@@ -19,4 +23,15 @@ button {
   border-color: white;
   border-radius: 5px;
   color: white;
+}
+
+select {
+  background-color: #282c34;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 15px;
+  padding: 5%;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: center;
 }

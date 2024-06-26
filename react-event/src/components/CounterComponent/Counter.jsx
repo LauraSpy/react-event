@@ -19,10 +19,12 @@ function Counter({ count, onCountChange }) {
 
   return (
     <div>
-      <p>Compteur : {count}</p>
-      <button onClick={increment}>Incrémenter</button>
-      <button onClick={decrement}>Décrémenter</button>
-      <button onClick={reset}>Remettre à zéro</button>
+      <p>{count}</p>
+      <div className='buttons'>
+        <button onClick={increment}>+</button>
+        <button onClick={decrement}>-</button>
+        <button onClick={reset}>~</button>
+      </div>
     </div>
   );
 }

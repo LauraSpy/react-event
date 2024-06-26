@@ -37,9 +37,9 @@ function App() {
   };
 
   return (
-    <div className='body'>
-      <div className='activity'>
-        <label htmlFor="activity-select">Choisissez une activité : </label>
+    <div>
+      <div>
+        <label htmlFor="activity-select">Activité : </label>
         <select id="activity-select" value={selectedActivity} onChange={handleActivityChange}>
           {activities.map((activity, index) => (
             <option key={index} value={activity}>

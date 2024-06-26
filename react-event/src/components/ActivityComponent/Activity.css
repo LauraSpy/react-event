@@ -1,5 +1,10 @@
+body {
+    width: 100vw;
+}
+
 h2 {
     text-align: center;
     text-transform: uppercase;
     color: white;
+    padding-top: 25%;
 }
