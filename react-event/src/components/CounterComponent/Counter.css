@@ -1,0 +1,25 @@
+div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons button {
+    height: 25px;
+    background-color: none;
+    border-radius: 5px;
+    
+}
+
+
+
