@@ -5,6 +5,7 @@ body {
   width: 100vw;
 }
 
+/* modifie le titre au-dessus de la liste déroulante */
 label {
   color: white;
   text-align: center;
@@ -18,6 +19,7 @@ label {
   padding: 50%;
 }
 
+/* modifie les boutons */
 button {
   background-color: #282c34;
   border-color: white;
@@ -25,6 +27,7 @@ button {
   color: white;
 }
 
+/* modifie le bouton de la liste déroulante */
 select {
   background-color: #282c34;
   color: aliceblue;

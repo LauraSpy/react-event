@@ -27,7 +27,6 @@ p {
 .buttons button {
     height: 25px;
     width: 25px;
-    background-color: none;
     border-radius: 50%;
     border: 1px solid darkslategray;
     color: aliceblue;

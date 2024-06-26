@@ -3,6 +3,8 @@ import React from 'react';
 import Counter from '../CounterComponent/Counter';
 import './Activity.css';
 
+// création d'une fonction qui va faire la structure de chaque activité qui pourra changer à la sélection dans 
+// la liste déroulante, et associée à chacune, son propre compteur -onCountChange permet de changer le compteur
 function ActivityComponent({ activityName, count, onCountChange }) {
   return (
     <div className="activity">

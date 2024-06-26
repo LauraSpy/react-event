@@ -28,7 +28,7 @@ function App() {
     setSelectedActivity(event.target.value);
   };
 
-  // met à jour le compteur d'une activité spécifique
+  // met à jour le compteur d'une activité spécifique, et garde en mémoire la nouvelle valeur du compteur
   const updateCounter = (activity, newValue) => {
     setCounters(prevCounters => ({
       ...prevCounters,
@@ -40,7 +40,9 @@ function App() {
     <div>
       <div>
         <label htmlFor="activity-select">Activité : </label>
+        {/* select permet de créer la liste déroulante pour les activités, fait appel à la variable activities plus haut */}
         <select id="activity-select" value={selectedActivity} onChange={handleActivityChange}>
+          {/* .map permet de récupérer la liste des activités notées dans la variale */}
           {activities.map((activity, index) => (
             <option key={index} value={activity}>
               {activity}
@@ -48,10 +50,13 @@ function App() {
           ))}
         </select>
       </div>
+      {/* appelle du composant activity.jsx qui permet d'avoir une structure de base et de faire le changement de compteur lié à l'activité */}
       <ActivityComponent 
         activityName={selectedActivity} 
         count={counters[selectedActivity]}
         onCountChange={(newValue) => updateCounter(selectedActivity, newValue)}
+        // permet de changer le compteur avec le changement de l'activité, affecte une nouvelle valeur au compteur en fonction de l'activité sélectionner, 
+        // la valeur sera garder en mémoire
       />
     </div>
   );
